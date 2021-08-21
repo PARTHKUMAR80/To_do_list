@@ -89,6 +89,14 @@ body{
     border-bottom: 5px solid rgb(26, 38, 192);
     font-size: 3rem;
     text-align: center;
+
+    width: 450px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    margin: 0 auto;
+
     /* background-color: rgb(161, 150, 150); */
     transition: border-top , background-color 300ms ease-in-out;
 }
@@ -137,6 +145,27 @@ body{
         justify-content: center;
     }
 }
+
+@media (max-width:483px){
+    .task-name{
+        width: 300px;
+    }
+}
+
+@media (max-width:326px){
+    .task-name{
+        width: 200px;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:233px){
+    .task-name{
+        width: 150px;
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width:449px){
     .added{
         max-width: 200px;
